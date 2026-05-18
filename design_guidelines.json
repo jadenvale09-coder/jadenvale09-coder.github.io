@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "domain": "Website Design & SEO Agency",
+    "placeholder_name": "Placeholder Studio",
+    "core_goal": "High-conversion lead capture",
+    "theme": "Light",
+    "archetype": "4 (Swiss & High-Contrast) adapted for Premium & Polished aesthetic"
+  },
+  "design_system": {
+    "typography": {
+      "headings": {
+        "family": "Outfit, sans-serif",
+        "style": "tracking-tight, high impact",
+        "h1": "text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight",
+        "h2": "text-3xl md:text-4xl font-bold text-slate-900",
+        "h3": "text-xl md:text-2xl font-semibold text-slate-900"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "style": "leading-relaxed, highly readable",
+        "base": "text-base md:text-lg text-slate-600",
+        "small": "text-sm text-slate-500 uppercase tracking-widest"
+      }
+    },
+    "colors": {
+      "background": {
+        "primary": "#ffffff",
+        "secondary": "#f8fafc"
+      },
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#475569",
+        "inverse": "#ffffff"
+      },
+      "brand": {
+        "primary": "#1e3a8a",
+        "primary_hover": "#1e40af",
+        "accent": "#cbd5e1"
+      },
+      "borders": {
+        "subtle": "#e2e8f0",
+        "focus": "#93c5fd"
+      }
+    },
+    "spacing": {
+      "section_y": "py-24 md:py-32",
+      "container_x": "px-6 md:px-12",
+      "gap_standard": "gap-8 md:gap-12",
+      "card_padding": "p-8 md:p-12"
+    },
+    "surfaces": {
+      "card": "bg-white border border-slate-200 shadow-sm rounded-xl",
+      "glass": "bg-white/80 backdrop-blur-xl border-b border-slate-200"
+    }
+  },
+  "media_assets": {
+    "brand_logo": {
+      "url": "https://customer-assets.emergentagent.com/job_8d6b2f2c-aa55-4423-8a3d-04478a254be3/artifacts/zm2kr6wy_Logoshop%202026-05-18%2011-45-8.jpeg",
+      "description": "User uploaded logo. Use in the header and footer."
+    },
+    "hero_background_abstract": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8d6b2f2c-aa55-4423-8a3d-04478a254be3/images/88852336fcdbcd3fee755e2490fba8fbb340ad4b1c288358876cc0101988714e.png",
+      "description": "Generated premium blue/gray workspace image. Use as a subtle background element or alongside the hero section."
+    },
+    "about_us_image": {
+      "url": "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBidXNpbmVzcyUyMGNvbnN1bHRhdGlvbiUyMG1lZXRpbmd8ZW58MHx8fHwxNzc5MTIzMjM2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Stock image of modern business consultation meeting."
+    },
+    "service_web_design": {
+      "url": "https://images.unsplash.com/photo-1637502875124-eb4a9843a2fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbGFwdG9wJTIwd2ViJTIwZGVzaWduJTIwZGVza3xlbnwwfHx8fDE3NzkxMjMyMzZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Minimalist laptop web design desk image."
+    },
+    "service_seo": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8d6b2f2c-aa55-4423-8a3d-04478a254be3/images/8a81fa7ae70a3f9a6b6423c3799d2b9d06b68349dcd07458d5f28366481c0182.png",
+      "description": "Generated premium consulting image with charts/plans."
+    },
+    "service_redesign": {
+      "url": "https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBidXNpbmVzcyUyMGNvbnN1bHRhdGlvbiUyMG1lZXRpbmd8ZW58MHx8fHwxNzc5MTIzMjM2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Stock image of two people analyzing web pages on laptops."
+    }
+  },
+  "layout_sections": [
+    {
+      "name": "Header",
+      "layout": "Sticky top, glassmorphism surface. Flex container space-between.",
+      "elements": [
+        "Left: Logo image (h-10 or h-12)",
+        "Right: 'Book a free consultation' Button (Primary color #1E3A8A)"
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "layout": "Split 2-column grid on desktop (1:1 ratio). Background: white or very light gray.",
+      "elements": [
+        "Left Column: H1 Headline ('Premium Websites That Drive Revenue'), subheadline, and trust badges.",
+        "Right Column: Lead Capture Form embedded inside a card."
+      ],
+      "conversion_note": "Placing the form immediately visible above the fold drastically increases conversion rates."
+    },
+    {
+      "name": "Social Proof",
+      "layout": "Horizontal marquee or grid.",
+      "elements": [
+        "Text: 'Trusted by growing brands'",
+        "Content: Simple typography-based placeholders for client names to maintain premium feel."
+      ]
+    },
+    {
+      "name": "Services Section",
+      "layout": "3-column grid (bento-style).",
+      "elements": [
+        "Card 1: Website Design + image (`service_web_design`)",
+        "Card 2: Website Redesign + image (`service_redesign`)",
+        "Card 3: SEO / Google Visibility + image (`service_seo`)",
+        "Styling: Generous padding, minimal text per card, clear visual hierarchy."
+      ]
+    },
+    {
+      "name": "About Us Section",
+      "layout": "Side-by-side (Image on Left, Text on Right).",
+      "elements": [
+        "Image: `about_us_image` with rounded-xl border.",
+        "Text: H2 'Your Partners in Digital Growth', short paragraph, secondary CTA."
+      ]
+    },
+    {
+      "name": "Footer",
+      "layout": "Dark background (#0f172a), white text.",
+      "elements": [
+        "Top: Large final CTA 'Ready to scale?' with a button.",
+        "Bottom: Logo, copyright, simple links."
+      ]
+    }
+  ],
+  "technical_instructions_to_main_agent": [
+    "Use raw HTML and Tailwind classes for structural layouts (sections, grids).",
+    "Use Shadcn UI components for the Lead Capture Form (Input, Textarea, Button).",
+    "Strict Accessibility & Testing: Ensure ALL interactive elements (buttons, form inputs, links) have a `data-testid` attribute (e.g., `data-testid=\"hero-lead-form-submit\"`).",
+    "Images MUST not exceed 80vh height on mobile. Wrap images gracefully with `object-cover`.",
+    "Do not use generic fonts for headings (NO Inter/Roboto). Stick to the specified 'Outfit' font for headers.",
+    "Ensure high contrast on the CTA button (White text on Deep Blue #1E3A8A)."
+  ]
+}
