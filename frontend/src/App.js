@@ -61,7 +61,7 @@ const BrandMark = ({ mode = "light", testId = "brand-mark" }) => (
   <div className="flex items-center gap-3" data-testid={testId}>
     <img
       src={logoUrl}
-      alt="Placeholder Studio logo"
+      alt="AJ Webworks logo"
       className="h-11 w-11 rounded-xl border border-slate-200 bg-white object-cover p-1 shadow-sm"
       data-testid={`${testId}-logo-image`}
     />
@@ -70,7 +70,7 @@ const BrandMark = ({ mode = "light", testId = "brand-mark" }) => (
         className={`font-heading text-lg font-extrabold tracking-tight ${mode === "dark" ? "text-white" : "text-slate-950"}`}
         data-testid={`${testId}-name`}
       >
-        Placeholder Studio
+        AJ Webworks
       </p>
       <p className={mode === "dark" ? "text-xs text-slate-400" : "text-xs text-slate-500"} data-testid={`${testId}-tagline`}>
         Websites that sell
@@ -358,7 +358,7 @@ const Home = () => {
               Your partners in digital growth.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 md:text-lg" data-testid="about-description">
-              Placeholder Studio builds polished websites with a simple goal: make your business easier to trust and easier to contact.
+              AJ Webworks builds polished websites with a simple goal: make your business easier to trust and easier to contact.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-3" data-testid="about-proof-grid">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5" data-testid="about-proof-strategy">
@@ -411,7 +411,7 @@ const Home = () => {
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <BrandMark testId="footer-brand-mark" />
           <p className="text-sm text-slate-500" data-testid="footer-copyright">
-            © 2026 Placeholder Studio. Modern websites for growing businesses.
+            © 2026 AJ Webworks. Modern websites for growing businesses.
           </p>
         </div>
       </footer>

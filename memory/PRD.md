@@ -1,4 +1,4 @@
-# Placeholder Studio Landing Page PRD
+# AJ Webworks Landing Page PRD
 
 ## Original Problem Statement
 Build a landing page for a website-selling business. Make it modern and simple, include gray and blue colors, implement the provided logo, place an immediate call to action at the top, avoid too much text, use a good amount of stock images, optimize for conversion rate, and include sections like About Us and Services. The name should be a placeholder while the business name is still being decided.
@@ -8,7 +8,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Lead capture: Name, email, and message form
 - Services: Website redesign, website design, SEO / Google visibility
 - Tone: Premium and polished
-- Placeholder name: Placeholder Studio
+- Final business name: AJ Webworks
 - Logo: User-uploaded logo asset integrated in header and footer
 
 ## Architecture Decisions
@@ -44,3 +44,6 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Add FAQ section to handle buyer objections.
 - Add case-study gallery when portfolio examples are available.
 - Add lightweight SEO metadata and richer page copy once brand positioning is final.
+
+## Recent Update
+- Final business name updated to AJ Webworks across the landing page header, footer, logo alt text, about copy, and product documentation.
