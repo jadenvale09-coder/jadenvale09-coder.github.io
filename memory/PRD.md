@@ -6,7 +6,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ## User Choices
 - Main CTA: Book a free consultation
 - Lead capture: Name, email, and message form
-- Current services: Website redesign and website design
+- Current services: New Website Builds and Website Redesigns
 - Tone: Premium and polished
 - Final business name: AJ Webworks
 - Logo: User-uploaded logo asset integrated in header and footer
@@ -62,3 +62,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Removed SEO / Google visibility from the Services section and related page copy.
 - Services now focus only on website design/builds and website redesigns.
 - Verified the live Services section shows only the two remaining service cards.
+
+## Recent Update - Service Names and Comparison
+- Renamed services to New Website Builds and Website Redesigns.
+- Added a New Build vs. Redesign comparison section to help visitors choose the right path.
+- Verified the services and comparison section on the live page.

@@ -26,17 +26,32 @@ const images = {
 const services = [
   {
     icon: MonitorSmartphone,
-    title: "Website Design",
-    copy: "Clean, premium sites built to turn visitors into booked calls.",
+    title: "New Website Builds",
+    copy: "A fresh site from the ground up, built around your offer, trust, and booked consultations.",
     image: images.design,
-    testId: "service-website-design-card",
+    testId: "service-new-website-builds-card",
   },
   {
     icon: Sparkles,
-    title: "Website Redesign",
-    copy: "Modernize your current site with sharper messaging and stronger flow.",
+    title: "Website Redesigns",
+    copy: "A sharper version of your current site with cleaner visuals, messaging, and visitor flow.",
     image: images.redesign,
-    testId: "service-website-redesign-card",
+    testId: "service-website-redesigns-card",
+  },
+];
+
+const comparisonItems = [
+  {
+    label: "Choose a new build if...",
+    title: "You need a complete online foundation.",
+    details: ["No current site", "New brand or offer", "You want a polished launch from scratch"],
+    testId: "comparison-new-build-card",
+  },
+  {
+    label: "Choose a redesign if...",
+    title: "Your current site needs to work harder.",
+    details: ["Outdated look", "Confusing user flow", "Visitors are not turning into leads"],
+    testId: "comparison-redesign-card",
   },
 ];
 
@@ -327,7 +342,7 @@ const Home = () => {
               Focused services. Better conversion.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg" data-testid="services-description">
-              Focused website builds and redesigns that look credible, load with purpose, and guide buyers to the next step.
+              New websites and redesigns that look credible, load with purpose, and guide buyers to the next step.
             </p>
           </div>
 
@@ -362,6 +377,43 @@ const Home = () => {
                 </article>
               );
             })}
+          </div>
+
+          <div className="mt-10 rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8 lg:p-10" data-testid="service-comparison-section">
+            <div className="mb-7 flex flex-col gap-3 md:flex-row md:items-end md:justify-between" data-testid="service-comparison-heading-block">
+              <div>
+                <p className="mb-2 text-sm font-bold uppercase tracking-[0.28em] text-blue-900" data-testid="service-comparison-eyebrow">
+                  New build vs. redesign
+                </p>
+                <h3 className="font-heading text-2xl font-extrabold tracking-[-0.035em] text-slate-950 sm:text-3xl" data-testid="service-comparison-title">
+                  Not sure which one you need?
+                </h3>
+              </div>
+              <p className="max-w-xl text-sm leading-6 text-slate-600" data-testid="service-comparison-description">
+                We keep the choice simple: start fresh when you need a full foundation, redesign when your existing site has potential but needs polish.
+              </p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2" data-testid="service-comparison-grid">
+              {comparisonItems.map((item) => (
+                <article key={item.title} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm" data-testid={item.testId}>
+                  <p className="text-xs font-bold uppercase tracking-[0.24em] text-blue-900" data-testid={`${item.testId}-label`}>
+                    {item.label}
+                  </p>
+                  <h4 className="mt-3 font-heading text-xl font-extrabold tracking-tight text-slate-950" data-testid={`${item.testId}-title`}>
+                    {item.title}
+                  </h4>
+                  <ul className="mt-5 space-y-3" data-testid={`${item.testId}-list`}>
+                    {item.details.map((detail) => (
+                      <li key={detail} className="flex items-start gap-3 text-sm font-semibold text-slate-700" data-testid={`${item.testId}-${detail.toLowerCase().replaceAll(" ", "-")}`}>
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-800" aria-hidden="true" />
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
