@@ -6,7 +6,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ## User Choices
 - Main CTA: Book a free consultation
 - Lead capture: Name, email, and message form
-- Services: Website redesign, website design, SEO / Google visibility
+- Current services: Website redesign and website design
 - Tone: Premium and polished
 - Final business name: AJ Webworks
 - Logo: User-uploaded logo asset integrated in header and footer
@@ -43,7 +43,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ### P2
 - Add FAQ section to handle buyer objections.
 - Add case-study gallery when portfolio examples are available.
-- Add lightweight SEO metadata and richer page copy once brand positioning is final.
+- Add richer page copy once brand positioning is final.
 
 ## Recent Update
 - Final business name updated to AJ Webworks across the landing page header, footer, logo alt text, about copy, and product documentation.
@@ -57,3 +57,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added a phone number field to the AJ Webworks consultation form.
 - Phone is included in Web3Forms submissions and stored with backup leads through `/api/leads`.
 - Verified frontend visibility/fill behavior and backend regression tests.
+
+## Recent Update - Services Focus
+- Removed SEO / Google visibility from the Services section and related page copy.
+- Services now focus only on website design/builds and website redesigns.
+- Verified the live Services section shows only the two remaining service cards.

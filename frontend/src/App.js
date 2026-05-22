@@ -2,7 +2,7 @@ import { useState } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import { ArrowRight, CheckCircle2, LineChart, MonitorSmartphone, Search, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, MonitorSmartphone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -20,7 +20,6 @@ const images = {
   hero: "https://static.prod-images.emergentagent.com/jobs/8d6b2f2c-aa55-4423-8a3d-04478a254be3/images/88852336fcdbcd3fee755e2490fba8fbb340ad4b1c288358876cc0101988714e.png",
   design: "https://images.unsplash.com/photo-1637502875124-eb4a9843a2fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbGFwdG9wJTIwd2ViJTIwZGVzaWduJTIwZGVza3xlbnwwfHx8fDE3NzkxMjMyMzZ8MA&ixlib=rb-4.1.0&q=85",
   redesign: "https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBidXNpbmVzcyUyMGNvbnN1bHRhdGlvbiUyMG1lZXRpbmd8ZW58MHx8fHwxNzc5MTIzMjM2fDA&ixlib=rb-4.1.0&q=85",
-  seo: "https://static.prod-images.emergentagent.com/jobs/8d6b2f2c-aa55-4423-8a3d-04478a254be3/images/8a81fa7ae70a3f9a6b6423c3799d2b9d06b68349dcd07458d5f28366481c0182.png",
   about: "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBidXNpbmVzcyUyMGNvbnN1bHRhdGlvbiUyMG1lZXRpbmd8ZW58MHx8fHwxNzc5MTIzMjM2fDA&ixlib=rb-4.1.0&q=85",
 };
 
@@ -38,13 +37,6 @@ const services = [
     copy: "Modernize your current site with sharper messaging and stronger flow.",
     image: images.redesign,
     testId: "service-website-redesign-card",
-  },
-  {
-    icon: Search,
-    title: "SEO Visibility",
-    copy: "Simple search foundations that help buyers find you faster.",
-    image: images.seo,
-    testId: "service-seo-visibility-card",
   },
 ];
 
@@ -197,7 +189,7 @@ const LeadForm = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="I need a new site, redesign, or more leads from Google..."
+              placeholder="I need a new site, redesign, or a cleaner way to book clients..."
               required
               minLength={8}
               className="min-h-28 rounded-xl border-slate-200 bg-slate-50/70 px-4 py-3 focus-visible:ring-blue-300"
@@ -223,7 +215,7 @@ const LeadForm = () => {
 };
 
 const Home = () => {
-  const trustPoints = ["Conversion-first design", "Clear launch process", "SEO-ready structure"];
+  const trustPoints = ["Conversion-first design", "Clear launch process", "Built for trust"];
 
   return (
     <main className="min-h-screen overflow-hidden bg-white text-slate-950" data-testid="landing-page-root">
@@ -269,7 +261,7 @@ const Home = () => {
               Premium websites that drive revenue.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg" data-testid="hero-subheadline">
-              We design, redesign, and optimize clean websites that help visitors trust you faster and take action sooner.
+              We build and redesign clean websites that help visitors trust you faster and take action sooner.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row" data-testid="hero-cta-row">
               <button
@@ -335,11 +327,11 @@ const Home = () => {
               Focused services. Better conversion.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg" data-testid="services-description">
-              Everything your site needs to look credible, load with purpose, and guide buyers to the next step.
+              Focused website builds and redesigns that look credible, load with purpose, and guide buyers to the next step.
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3" data-testid="services-card-grid">
+          <div className="grid gap-6 lg:grid-cols-2" data-testid="services-card-grid">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
@@ -402,9 +394,9 @@ const Home = () => {
                 <p className="font-heading text-2xl font-extrabold" data-testid="about-proof-design-value">02</p>
                 <p className="mt-2 text-sm text-slate-300" data-testid="about-proof-design-label">Premium design</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5" data-testid="about-proof-seo">
-                <p className="font-heading text-2xl font-extrabold" data-testid="about-proof-seo-value">03</p>
-                <p className="mt-2 text-sm text-slate-300" data-testid="about-proof-seo-label">SEO basics</p>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5" data-testid="about-proof-launch">
+                <p className="font-heading text-2xl font-extrabold" data-testid="about-proof-launch-value">03</p>
+                <p className="mt-2 text-sm text-slate-300" data-testid="about-proof-launch-label">Smooth launch</p>
               </div>
             </div>
             <button
