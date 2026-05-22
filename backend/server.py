@@ -41,6 +41,7 @@ class StatusCheckCreate(BaseModel):
 class LeadCreate(BaseModel):
     name: str = Field(..., min_length=2, max_length=80)
     email: EmailStr
+    phone: str | None = Field(default=None, max_length=40)
     message: str = Field(..., min_length=8, max_length=1000)
 
 
@@ -50,6 +51,7 @@ class Lead(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     name: str
     email: EmailStr
+    phone: str | None = None
     message: str
     created_at: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 

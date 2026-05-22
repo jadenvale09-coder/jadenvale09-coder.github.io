@@ -82,7 +82,7 @@ const BrandMark = ({ mode = "light", testId = "brand-mark" }) => (
 );
 
 const LeadForm = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event) => {
@@ -101,6 +101,7 @@ const LeadForm = () => {
       web3Payload.append("from_name", "AJ Webworks Website");
       web3Payload.append("name", formData.name);
       web3Payload.append("email", formData.email);
+      web3Payload.append("phone", formData.phone);
       web3Payload.append("message", formData.message);
 
       const web3Response = await axios.post(WEB3FORMS_ENDPOINT, web3Payload);
@@ -114,7 +115,7 @@ const LeadForm = () => {
       toast.success("Consultation request sent", {
         description: "Your message was delivered successfully.",
       });
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       toast.error("Something went wrong", {
         description: "Please check your details and try again.",
@@ -170,6 +171,21 @@ const LeadForm = () => {
               required
               className="h-12 rounded-xl border-slate-200 bg-slate-50/70 px-4 focus-visible:ring-blue-300"
               data-testid="lead-form-email-input"
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="mb-2 block text-sm font-semibold text-slate-700" data-testid="lead-form-phone-label">
+              Phone number
+            </label>
+            <Input
+              id="phone"
+              name="phone"
+              type="tel"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="(555) 123-4567"
+              className="h-12 rounded-xl border-slate-200 bg-slate-50/70 px-4 focus-visible:ring-blue-300"
+              data-testid="lead-form-phone-input"
             />
           </div>
           <div>
