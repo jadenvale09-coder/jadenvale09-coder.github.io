@@ -11,6 +11,8 @@ import { Toaster, toast } from "@/components/ui/sonner";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
+const WEB3FORMS_ENDPOINT = process.env.REACT_APP_WEB3FORMS_ENDPOINT;
+const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
 
 const logoUrl = "https://customer-assets.emergentagent.com/job_8d6b2f2c-aa55-4423-8a3d-04478a254be3/artifacts/zm2kr6wy_Logoshop%202026-05-18%2011-45-8.jpeg";
 
@@ -93,9 +95,24 @@ const LeadForm = () => {
     setIsSubmitting(true);
 
     try {
-      await axios.post(`${API}/leads`, formData);
+      const web3Payload = new FormData();
+      web3Payload.append("access_key", WEB3FORMS_ACCESS_KEY);
+      web3Payload.append("subject", "New consultation request from AJ Webworks");
+      web3Payload.append("from_name", "AJ Webworks Website");
+      web3Payload.append("name", formData.name);
+      web3Payload.append("email", formData.email);
+      web3Payload.append("message", formData.message);
+
+      const web3Response = await axios.post(WEB3FORMS_ENDPOINT, web3Payload);
+
+      if (!web3Response.data?.success) {
+        throw new Error(web3Response.data?.message || "Web3Forms submission failed");
+      }
+
+      await axios.post(`${API}/leads`, formData).catch(() => null);
+
       toast.success("Consultation request sent", {
-        description: "We’ll follow up shortly with next steps.",
+        description: "Your message was delivered successfully.",
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {

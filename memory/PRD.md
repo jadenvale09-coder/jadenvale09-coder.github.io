@@ -47,3 +47,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 
 ## Recent Update
 - Final business name updated to AJ Webworks across the landing page header, footer, logo alt text, about copy, and product documentation.
+
+## Recent Update - Web3Forms
+- Connected the AJ Webworks consultation form to Web3Forms using the provided access key.
+- The form now sends submissions through Web3Forms from the browser and also stores a backup lead in MongoDB through `/api/leads`.
+- Server-side Web3Forms forwarding was tested and blocked by Web3Forms because their API requires client-side usage unless server IP whitelisting is enabled.
