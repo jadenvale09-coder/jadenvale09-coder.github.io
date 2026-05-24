@@ -67,3 +67,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Renamed services to New Website Builds and Website Redesigns.
 - Added a New Build vs. Redesign comparison section to help visitors choose the right path.
 - Verified the services and comparison section on the live page.
+
+## Recent Update - Hero Social Proof
+- Added a compact social proof card inside the hero area so credibility appears near the top of the page.
+- Reused the brand proof names in the main social proof band for consistency.
+- Verified the hero social proof displays correctly on the live page.

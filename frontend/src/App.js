@@ -55,6 +55,8 @@ const comparisonItems = [
   },
 ];
 
+const proofBrands = ["Northline", "Arcwell", "Stonebay", "Lumen Co."];
+
 const scrollToLeadForm = () => {
   const leadCard = document.getElementById("lead-form-card");
   if (!leadCard) return;
@@ -303,6 +305,30 @@ const Home = () => {
                 </div>
               ))}
             </div>
+
+            <div className="mt-8 max-w-2xl rounded-[1.5rem] border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur" data-testid="hero-social-proof-card">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between" data-testid="hero-social-proof-content">
+                <div data-testid="hero-social-proof-copy">
+                  <p className="text-xs font-bold uppercase tracking-[0.24em] text-blue-900" data-testid="hero-social-proof-eyebrow">
+                    Social proof
+                  </p>
+                  <p className="mt-1 text-sm font-bold text-slate-800" data-testid="hero-social-proof-headline">
+                    Trusted by growing brands ready for a sharper website.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2" data-testid="hero-social-proof-brand-list">
+                  {proofBrands.map((brand) => (
+                    <span
+                      key={brand}
+                      className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-extrabold tracking-tight text-slate-500"
+                      data-testid={`hero-social-proof-brand-${brand.toLowerCase().replaceAll(" ", "-").replaceAll(".", "")}`}
+                    >
+                      {brand}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[0.82fr_1fr]" data-testid="hero-visual-and-form-column">
@@ -324,10 +350,11 @@ const Home = () => {
             Trusted by growing brands
           </p>
           <div className="grid grid-cols-2 gap-4 text-lg font-extrabold tracking-tight text-slate-400 sm:grid-cols-4 md:gap-10" data-testid="client-placeholder-list">
-            <span data-testid="client-placeholder-northline">Northline</span>
-            <span data-testid="client-placeholder-arcwell">Arcwell</span>
-            <span data-testid="client-placeholder-stonebay">Stonebay</span>
-            <span data-testid="client-placeholder-lumen">Lumen Co.</span>
+            {proofBrands.map((brand) => (
+              <span key={brand} data-testid={`client-placeholder-${brand.toLowerCase().replaceAll(" ", "-").replaceAll(".", "")}`}>
+                {brand}
+              </span>
+            ))}
           </div>
         </div>
       </section>
