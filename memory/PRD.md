@@ -81,3 +81,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ## Recent Update - Review Names
 - Updated review cards to use human names: Amanda Brooks, Marcus Lee, and Priya Shah.
 - Verified the review cards display the names correctly on the live page.
+
+## Recent Update - Review Business Types
+- Added short business types under each review name: Home services owner, Consulting founder, and Local retail operator.
+- Verified the review cards display the business types correctly on the live page.

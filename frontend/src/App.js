@@ -61,6 +61,7 @@ const reviews = [
     stars: "★★★★★",
     quote: "Clean, professional, and exactly what we needed to start booking better leads.",
     name: "Amanda Brooks",
+    businessType: "Home services owner",
     testId: "review-five-star-owner",
   },
   {
@@ -68,6 +69,7 @@ const reviews = [
     stars: "★★★★½",
     quote: "The redesign made our business look far more credible and easier to contact.",
     name: "Marcus Lee",
+    businessType: "Consulting founder",
     testId: "review-four-half-star-founder",
   },
   {
@@ -75,6 +77,7 @@ const reviews = [
     stars: "★★★★★",
     quote: "Simple process, polished result, and a website that finally feels premium.",
     name: "Priya Shah",
+    businessType: "Local retail operator",
     testId: "review-five-star-operator",
   },
 ];
@@ -387,6 +390,9 @@ const Home = () => {
                 </p>
                 <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-slate-400" data-testid={`${review.testId}-name`}>
                   {review.name}
+                </p>
+                <p className="mt-1 text-xs font-semibold text-slate-500" data-testid={`${review.testId}-business-type`}>
+                  {review.businessType}
                 </p>
               </article>
             ))}
