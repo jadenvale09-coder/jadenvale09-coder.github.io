@@ -77,3 +77,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Replaced brand-name social proof with 4.5 and 5.0 star review-style proof near the hero.
 - Updated the lower proof band to show review cards with ratings, quotes, and reviewer roles.
 - Verified the hero review proof displays correctly on the live page.
+
+## Recent Update - Review Names
+- Updated review cards to use human names: Amanda Brooks, Marcus Lee, and Priya Shah.
+- Verified the review cards display the names correctly on the live page.
