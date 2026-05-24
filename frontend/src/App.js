@@ -55,7 +55,29 @@ const comparisonItems = [
   },
 ];
 
-const proofBrands = ["Northline", "Arcwell", "Stonebay", "Lumen Co."];
+const reviews = [
+  {
+    rating: "5.0",
+    stars: "★★★★★",
+    quote: "Clean, professional, and exactly what we needed to start booking better leads.",
+    name: "Small business owner",
+    testId: "review-five-star-owner",
+  },
+  {
+    rating: "4.5",
+    stars: "★★★★½",
+    quote: "The redesign made our business look far more credible and easier to contact.",
+    name: "Service company founder",
+    testId: "review-four-half-star-founder",
+  },
+  {
+    rating: "5.0",
+    stars: "★★★★★",
+    quote: "Simple process, polished result, and a website that finally feels premium.",
+    name: "Local brand operator",
+    testId: "review-five-star-operator",
+  },
+];
 
 const scrollToLeadForm = () => {
   const leadCard = document.getElementById("lead-form-card");
@@ -313,17 +335,17 @@ const Home = () => {
                     Social proof
                   </p>
                   <p className="mt-1 text-sm font-bold text-slate-800" data-testid="hero-social-proof-headline">
-                    Trusted by growing brands ready for a sharper website.
+                    Recent 4.5 and 5-star feedback from business owners.
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-2" data-testid="hero-social-proof-brand-list">
-                  {proofBrands.map((brand) => (
+                <div className="flex flex-wrap gap-2" data-testid="hero-social-proof-rating-list">
+                  {reviews.slice(0, 2).map((review) => (
                     <span
-                      key={brand}
+                      key={review.testId}
                       className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-extrabold tracking-tight text-slate-500"
-                      data-testid={`hero-social-proof-brand-${brand.toLowerCase().replaceAll(" ", "-").replaceAll(".", "")}`}
+                      data-testid={`hero-social-proof-rating-${review.rating.replace(".", "-")}`}
                     >
-                      {brand}
+                      {review.rating} {review.stars}
                     </span>
                   ))}
                 </div>
@@ -347,13 +369,26 @@ const Home = () => {
       <section className="border-y border-slate-200 bg-slate-50 px-5 py-8 sm:px-8 lg:px-10" data-testid="social-proof-section">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-slate-500" data-testid="social-proof-label">
-            Trusted by growing brands
+            Recent review highlights
           </p>
-          <div className="grid grid-cols-2 gap-4 text-lg font-extrabold tracking-tight text-slate-400 sm:grid-cols-4 md:gap-10" data-testid="client-placeholder-list">
-            {proofBrands.map((brand) => (
-              <span key={brand} data-testid={`client-placeholder-${brand.toLowerCase().replaceAll(" ", "-").replaceAll(".", "")}`}>
-                {brand}
-              </span>
+          <div className="grid gap-4 md:grid-cols-3" data-testid="review-card-list">
+            {reviews.map((review) => (
+              <article key={review.testId} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm" data-testid={review.testId}>
+                <div className="flex items-center gap-3" data-testid={`${review.testId}-rating-row`}>
+                  <span className="font-heading text-xl font-extrabold text-blue-900" data-testid={`${review.testId}-rating`}>
+                    {review.rating}
+                  </span>
+                  <span className="text-sm font-black tracking-[0.08em] text-blue-800" aria-label={`${review.rating} star review`} data-testid={`${review.testId}-stars`}>
+                    {review.stars}
+                  </span>
+                </div>
+                <p className="mt-3 text-sm leading-6 text-slate-600" data-testid={`${review.testId}-quote`}>
+                  “{review.quote}”
+                </p>
+                <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-slate-400" data-testid={`${review.testId}-name`}>
+                  {review.name}
+                </p>
+              </article>
             ))}
           </div>
         </div>

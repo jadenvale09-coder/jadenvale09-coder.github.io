@@ -72,3 +72,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added a compact social proof card inside the hero area so credibility appears near the top of the page.
 - Reused the brand proof names in the main social proof band for consistency.
 - Verified the hero social proof displays correctly on the live page.
+
+## Recent Update - Star Review Social Proof
+- Replaced brand-name social proof with 4.5 and 5.0 star review-style proof near the hero.
+- Updated the lower proof band to show review cards with ratings, quotes, and reviewer roles.
+- Verified the hero review proof displays correctly on the live page.
