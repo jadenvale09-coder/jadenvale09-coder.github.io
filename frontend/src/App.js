@@ -309,7 +309,7 @@ const Home = () => {
               Premium websites that drive revenue.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg" data-testid="hero-subheadline">
-              We build and redesign clean websites that help visitors trust you faster and take action sooner.
+              AJ Webworks provides website design and redesign services for small businesses that want more trust, clearer messaging, and more booked consultations.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row" data-testid="hero-cta-row">
               <button

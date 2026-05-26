@@ -94,3 +94,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ## Recent Update - Review Box Label
 - Removed the “Social proof” label from the hero review box while keeping the star review text and ratings.
 - Verified the hero review box no longer includes that label on the live page.
+
+## Recent Update - SEO Keyword
+- Added the keyword “website design and redesign services for small businesses” to the hero copy.
+- Updated page title, meta description, meta keywords, and Open Graph metadata around the same keyword.
+- Verified the keyword appears in the live page title and visible hero copy.
