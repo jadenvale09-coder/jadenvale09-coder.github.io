@@ -99,3 +99,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added the keyword “website design and redesign services for small businesses” to the hero copy.
 - Updated page title, meta description, meta keywords, and Open Graph metadata around the same keyword.
 - Verified the keyword appears in the live page title and visible hero copy.
+
+## Recent Update - FAQ Section
+- Added a concise FAQ section covering timeline, redesigns, new build vs. redesign, and consultation-focused website goals.
+- Included the keyword theme “website design and redesign services for small businesses” naturally in the FAQ copy.
+- Verified the FAQ section displays correctly on the live page.

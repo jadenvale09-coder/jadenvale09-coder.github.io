@@ -57,6 +57,29 @@ const comparisonItems = [
   },
 ];
 
+const faqs = [
+  {
+    question: "How long does a new website build take?",
+    answer: "Most small business website builds can be planned, designed, and launched in a few weeks depending on the size and content needed.",
+    testId: "faq-new-website-build-timeline",
+  },
+  {
+    question: "Do you redesign existing websites?",
+    answer: "Yes. AJ Webworks can modernize your current site with cleaner visuals, stronger messaging, and a smoother path to booking a consultation.",
+    testId: "faq-website-redesigns",
+  },
+  {
+    question: "What is the difference between a new build and a redesign?",
+    answer: "A new build is best when you need a complete website from scratch. A redesign is best when your current site has potential but needs a more professional look and better flow.",
+    testId: "faq-new-build-vs-redesign",
+  },
+  {
+    question: "Can the website help me get more consultation requests?",
+    answer: "That is the goal. We focus on website design and redesign services for small businesses that need more trust, clearer messaging, and easier ways for visitors to contact them.",
+    testId: "faq-consultation-requests",
+  },
+];
+
 const reviews = [
   {
     rating: "5.0",
@@ -529,6 +552,42 @@ const Home = () => {
             >
               Book a free consultation
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-24 sm:px-8 lg:px-10 lg:py-32" data-testid="faq-section">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
+          <div data-testid="faq-heading-block">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-blue-900" data-testid="faq-eyebrow">
+              FAQ
+            </p>
+            <h2 className="font-heading text-3xl font-extrabold tracking-[-0.04em] text-slate-950 sm:text-4xl" data-testid="faq-title">
+              Quick answers before you book.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg" data-testid="faq-description">
+              A few common questions about new website builds, redesigns, and what to expect when working with AJ Webworks.
+            </p>
+            <button
+              onClick={scrollToLeadForm}
+              className="mt-8 rounded-full bg-blue-900 px-7 py-4 text-sm font-bold text-white shadow-xl shadow-blue-900/20 transition-[background-color,transform,box-shadow] duration-300 hover:-translate-y-1 hover:bg-blue-800 hover:shadow-2xl hover:shadow-blue-900/25"
+              data-testid="faq-consultation-button"
+            >
+              Still have questions? Book a free consultation
+            </button>
+          </div>
+
+          <div className="space-y-4" data-testid="faq-list">
+            {faqs.map((faq) => (
+              <article key={faq.testId} className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6 shadow-sm" data-testid={faq.testId}>
+                <h3 className="font-heading text-xl font-extrabold tracking-tight text-slate-950" data-testid={`${faq.testId}-question`}>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600" data-testid={`${faq.testId}-answer`}>
+                  {faq.answer}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
