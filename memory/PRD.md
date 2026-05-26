@@ -90,3 +90,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added the second Web3Forms access key so each form submission is sent to both configured Web3Forms inboxes.
 - Updated the success message to confirm delivery to both business inboxes.
 - Verified a live dual Web3Forms submission and confirmed backup lead storage still works.
+
+## Recent Update - Review Box Label
+- Removed the “Social proof” label from the hero review box while keeping the star review text and ratings.
+- Verified the hero review box no longer includes that label on the live page.

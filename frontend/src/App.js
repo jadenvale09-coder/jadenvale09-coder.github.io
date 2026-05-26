@@ -340,9 +340,6 @@ const Home = () => {
             <div className="mt-8 max-w-2xl rounded-[1.5rem] border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur" data-testid="hero-social-proof-card">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between" data-testid="hero-social-proof-content">
                 <div data-testid="hero-social-proof-copy">
-                  <p className="text-xs font-bold uppercase tracking-[0.24em] text-blue-900" data-testid="hero-social-proof-eyebrow">
-                    Social proof
-                  </p>
                   <p className="mt-1 text-sm font-bold text-slate-800" data-testid="hero-social-proof-headline">
                     Recent 4.5 and 5-star feedback from business owners.
                   </p>
