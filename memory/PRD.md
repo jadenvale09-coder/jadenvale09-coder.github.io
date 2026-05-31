@@ -104,3 +104,10 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added a concise FAQ section covering timeline, redesigns, new build vs. redesign, and consultation-focused website goals.
 - Included the keyword theme “website design and redesign services for small businesses” naturally in the FAQ copy.
 - Verified the FAQ section displays correctly on the live page.
+
+## Recent Update - GitHub Pages Static Version
+- Created a separate GitHub Pages-friendly static site at the project root: `index.html`, `css/styles.css`, `js/main.js`, and `media/` subfolders.
+- Preserved the existing React/FastAPI app files while adding the static export structure.
+- Removed backend/Web3Forms dependency from the static version; consultation CTAs use `FORM_LINK_HERE` placeholders with HTML comments for adding a Google Form or other external form URL.
+- Downloaded key media into local static folders under `media/images/`; `media/video/` and `media/icons/` folders are present for future assets.
+- Verified the static page loads locally with the hero and services sections.
