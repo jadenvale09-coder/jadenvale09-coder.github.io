@@ -126,3 +126,7 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Replaced the React-rendered frontend view with a direct redirect to the copied static GitHub Pages version at `/github-pages/index.html`.
 - Copied static assets into `frontend/public/github-pages/` so Emergent preview displays the same site as the GitHub Pages version.
 - Verified the Emergent preview redirects to `/github-pages/index.html` and renders the static site directly.
+
+## Recent Update - Google Form Link
+- Replaced all `FORM_LINK_HERE` placeholders in the root static site and Emergent static preview copy with `https://forms.gle/ixQAAPpZwVBGPcbx6`.
+- Verified the preview hero consultation button points to the Google Form.
