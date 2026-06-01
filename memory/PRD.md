@@ -169,3 +169,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Rewrote website copy throughout to include ethos (trust/credibility), pathos (confidence/comfort), and logos (clear decisions/action paths).
 - Updated hero, consultation card, visual strategy, stats, services, comparison, about, FAQ, and final CTA copy.
 - Synced copy changes to both root static files and the Emergent preview static copy, then verified key wording in preview.
+
+## Recent Update - Removed Trust Signals Stat
+- Removed the “Clearer trust signals” / `2.1x` card from the conversion stats dropdown.
+- Updated stats grid from four cards to three cards in both root static files and Emergent preview static copy.
+- Verified the preview stats dropdown shows only form submissions, consultation clicks, and page drop-off.
