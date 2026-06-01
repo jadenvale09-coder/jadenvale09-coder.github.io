@@ -164,3 +164,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added a new click-to-open conversion statistics dropdown with sample stats: +38% form submissions, +52% consultation clicks, 2.1x trust signals, and -24% page drop-off.
 - Synced the stats section to both root static files and the Emergent preview static copy.
 - Verified the stats dropdown is closed by default and opens on click in preview.
+
+## Recent Update - Ethos Pathos Logos Copy
+- Rewrote website copy throughout to include ethos (trust/credibility), pathos (confidence/comfort), and logos (clear decisions/action paths).
+- Updated hero, consultation card, visual strategy, stats, services, comparison, about, FAQ, and final CTA copy.
+- Synced copy changes to both root static files and the Emergent preview static copy, then verified key wording in preview.
