@@ -154,3 +154,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Updated Marcus Lee’s review quote to: “Awesome looking website, super easy to submit a form.”
 - Updated both root static files and the Emergent preview static copy.
 - Verified the updated quote appears in the preview reviews dropdown.
+
+## Recent Update - Priya Shah Review
+- Updated Priya Shah’s review quote to: “Super easy process, great looking, I’m very satisfied.”
+- Updated both root static files and the Emergent preview static copy.
+- Verified the updated quote appears in the preview reviews dropdown.
