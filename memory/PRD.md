@@ -159,3 +159,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Updated Priya Shah’s review quote to: “Super easy process, great looking, I’m very satisfied.”
 - Updated both root static files and the Emergent preview static copy.
 - Verified the updated quote appears in the preview reviews dropdown.
+
+## Recent Update - Conversion Stats Dropdown
+- Added a new click-to-open conversion statistics dropdown with sample stats: +38% form submissions, +52% consultation clicks, 2.1x trust signals, and -24% page drop-off.
+- Synced the stats section to both root static files and the Emergent preview static copy.
+- Verified the stats dropdown is closed by default and opens on click in preview.
