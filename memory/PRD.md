@@ -121,3 +121,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added the same enhanced graphics to the React/Emergent preview, not just the GitHub Pages static files.
 - Added hero decorative shapes, mini browser graphic inside the lead card, and the visual strategy showcase section.
 - Verified the Emergent preview URL now shows the new graphics and showcase section.
+
+## Recent Update - React Frontend Static Replacement
+- Replaced the React-rendered frontend view with a direct redirect to the copied static GitHub Pages version at `/github-pages/index.html`.
+- Copied static assets into `frontend/public/github-pages/` so Emergent preview displays the same site as the GitHub Pages version.
+- Verified the Emergent preview redirects to `/github-pages/index.html` and renders the static site directly.
