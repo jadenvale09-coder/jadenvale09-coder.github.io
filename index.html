@@ -55,6 +55,14 @@
 
     <main id="top">
       <section class="hero section-pad" data-testid="hero-section">
+        <div class="hero-graphic-system" aria-hidden="true">
+          <span class="graphic-orb orb-one"></span>
+          <span class="graphic-orb orb-two"></span>
+          <span class="graphic-line line-one"></span>
+          <span class="graphic-line line-two"></span>
+          <span class="graphic-dot dot-one"></span>
+          <span class="graphic-dot dot-two"></span>
+        </div>
         <div class="container hero-grid">
           <div class="hero-copy reveal" data-testid="hero-copy">
             <p class="eyebrow badge">Premium websites for growing businesses</p>
@@ -95,6 +103,14 @@
               </figcaption>
             </figure>
             <aside class="consult-card" data-testid="consultation-card">
+              <div class="mini-browser-graphic" aria-hidden="true">
+                <div class="browser-top"><span></span><span></span><span></span></div>
+                <div class="browser-body">
+                  <div class="browser-line wide"></div>
+                  <div class="browser-line short"></div>
+                  <div class="browser-button"></div>
+                </div>
+              </div>
               <p class="eyebrow">Free consultation</p>
               <h2>Start with a better website plan.</h2>
               <p>Use the consultation form to tell us what you need. We’ll map the fastest path to a cleaner, higher-converting site.</p>
@@ -103,6 +119,53 @@
               </a>
               <!-- PUT GOOGLE FORM OR EXTERNAL FORM LINK IN THE href ABOVE -->
             </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-showcase section-pad" data-testid="visual-showcase-section">
+        <div class="container showcase-grid">
+          <div class="showcase-copy reveal" data-testid="visual-showcase-copy">
+            <p class="eyebrow">Visual strategy</p>
+            <h2>Designed to make the next step obvious.</h2>
+            <p>
+              Every page should guide visitors from first impression to booked consultation with clean visuals, clear proof,
+              and a simple action path.
+            </p>
+          </div>
+          <div class="website-preview-graphic reveal delay-1" aria-label="Graphic showing a website conversion layout" data-testid="website-preview-graphic">
+            <div class="preview-window">
+              <div class="preview-toolbar">
+                <span></span><span></span><span></span>
+                <div class="preview-url">ajwebworks.com</div>
+              </div>
+              <div class="preview-layout">
+                <div class="preview-hero-block">
+                  <span class="preview-pill"></span>
+                  <span class="preview-title-line"></span>
+                  <span class="preview-title-line small"></span>
+                  <span class="preview-cta-line"></span>
+                </div>
+                <div class="preview-side-panel">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="floating-stat stat-one" data-testid="graphic-stat-trust">
+              <strong>Trust</strong>
+              <span>Clear first impression</span>
+            </div>
+            <div class="floating-stat stat-two" data-testid="graphic-stat-action">
+              <strong>Action</strong>
+              <span>One obvious next step</span>
+            </div>
+            <div class="conversion-path" aria-hidden="true">
+              <span>Visit</span>
+              <i></i>
+              <span>Trust</span>
+              <i></i>
+              <span>Book</span>
+            </div>
           </div>
         </div>
       </section>
@@ -140,6 +203,7 @@
             <article class="service-card">
               <img src="media/images/website-build.jpg" alt="Laptop showing website design work" />
               <div>
+                <span class="service-icon build-icon" aria-hidden="true"></span>
                 <span class="service-number">01</span>
                 <h3>New Website Builds</h3>
                 <p>A fresh site from the ground up, built around your offer, trust, and booked consultations.</p>
@@ -148,6 +212,7 @@
             <article class="service-card">
               <img src="media/images/website-redesign.jpg" alt="Website redesign planning session" />
               <div>
+                <span class="service-icon redesign-icon" aria-hidden="true"></span>
                 <span class="service-number">02</span>
                 <h3>Website Redesigns</h3>
                 <p>A sharper version of your current site with cleaner visuals, messaging, and visitor flow.</p>
@@ -156,6 +221,9 @@
           </div>
 
           <div class="comparison" data-testid="comparison-section">
+            <div class="comparison-graphic" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
             <div class="comparison-heading">
               <p class="eyebrow">New build vs. redesign</p>
               <h3>Not sure which one you need?</h3>

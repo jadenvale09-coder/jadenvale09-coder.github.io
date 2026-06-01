@@ -111,3 +111,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Removed backend/Web3Forms dependency from the static version; consultation CTAs use `FORM_LINK_HERE` placeholders with HTML comments for adding a Google Form or other external form URL.
 - Downloaded key media into local static folders under `media/images/`; `media/video/` and `media/icons/` folders are present for future assets.
 - Verified the static page loads locally with the hero and services sections.
+
+## Recent Update - Static Site Graphics
+- Added more visual graphics to the GitHub Pages static site: hero decorative shapes, browser preview graphic, service icons, comparison accents, and a visual strategy showcase section.
+- Kept graphics CSS-based and GitHub Pages-friendly with no extra platform dependency.
+- Verified the static hero and new showcase graphics render correctly in browser.
