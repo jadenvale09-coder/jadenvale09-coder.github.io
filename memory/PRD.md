@@ -130,3 +130,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 ## Recent Update - Google Form Link
 - Replaced all `FORM_LINK_HERE` placeholders in the root static site and Emergent static preview copy with `https://forms.gle/ixQAAPpZwVBGPcbx6`.
 - Verified the preview hero consultation button points to the Google Form.
+
+## Recent Update - Dropdown Sections
+- Converted reviews, services, new build vs. redesign comparison, and FAQ items into click-to-open dropdown boxes in the static site.
+- Synced the dropdown changes to the Emergent preview static copy at `frontend/public/github-pages/`.
+- Verified reviews, services, comparison, and FAQ dropdowns are closed by default and open when clicked.

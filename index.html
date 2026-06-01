@@ -171,85 +171,106 @@
       </section>
 
       <section class="reviews-strip" data-testid="reviews-section">
-        <div class="container reviews-grid">
-          <p class="strip-label">Recent review highlights</p>
-          <article class="review-card">
-            <div><strong>5.0</strong> <span>★★★★★</span></div>
-            <p>“Clean, professional, and exactly what we needed to start booking better leads.”</p>
-            <small>Amanda Brooks · Home services owner</small>
-          </article>
-          <article class="review-card">
-            <div><strong>4.5</strong> <span>★★★★½</span></div>
-            <p>“The redesign made our business look far more credible and easier to contact.”</p>
-            <small>Marcus Lee · Consulting founder</small>
-          </article>
-          <article class="review-card">
-            <div><strong>5.0</strong> <span>★★★★★</span></div>
-            <p>“Simple process, polished result, and a website that finally feels premium.”</p>
-            <small>Priya Shah · Local retail operator</small>
-          </article>
+        <div class="container">
+          <details class="dropbox" data-testid="reviews-dropbox">
+            <summary data-testid="reviews-dropbox-summary">
+              <span>Reviews</span>
+              <strong>Recent 4.5 and 5-star feedback</strong>
+              <em>Open</em>
+            </summary>
+            <div class="reviews-grid dropbox-content" data-testid="reviews-dropbox-content">
+              <article class="review-card">
+                <div><strong>5.0</strong> <span>★★★★★</span></div>
+                <p>“Clean, professional, and exactly what we needed to start booking better leads.”</p>
+                <small>Amanda Brooks · Home services owner</small>
+              </article>
+              <article class="review-card">
+                <div><strong>4.5</strong> <span>★★★★½</span></div>
+                <p>“The redesign made our business look far more credible and easier to contact.”</p>
+                <small>Marcus Lee · Consulting founder</small>
+              </article>
+              <article class="review-card">
+                <div><strong>5.0</strong> <span>★★★★★</span></div>
+                <p>“Simple process, polished result, and a website that finally feels premium.”</p>
+                <small>Priya Shah · Local retail operator</small>
+              </article>
+            </div>
+          </details>
         </div>
       </section>
 
       <section id="services" class="section-pad" data-testid="services-section">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Services</p>
-            <h2>Focused services. Better conversion.</h2>
-            <p>New websites and redesigns that look credible, load with purpose, and guide buyers to the next step.</p>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card">
-              <img src="media/images/website-build.jpg" alt="Laptop showing website design work" />
-              <div>
-                <span class="service-icon build-icon" aria-hidden="true"></span>
-                <span class="service-number">01</span>
-                <h3>New Website Builds</h3>
-                <p>A fresh site from the ground up, built around your offer, trust, and booked consultations.</p>
+          <details class="dropbox section-dropbox" data-testid="services-dropbox">
+            <summary data-testid="services-dropbox-summary">
+              <span>Services</span>
+              <strong>Focused services. Better conversion.</strong>
+              <em>Open</em>
+            </summary>
+            <div class="dropbox-content" data-testid="services-dropbox-content">
+              <div class="section-heading compact-heading">
+                <p>New websites and redesigns that look credible, load with purpose, and guide buyers to the next step.</p>
               </div>
-            </article>
-            <article class="service-card">
-              <img src="media/images/website-redesign.jpg" alt="Website redesign planning session" />
-              <div>
-                <span class="service-icon redesign-icon" aria-hidden="true"></span>
-                <span class="service-number">02</span>
-                <h3>Website Redesigns</h3>
-                <p>A sharper version of your current site with cleaner visuals, messaging, and visitor flow.</p>
+              <div class="service-grid">
+                <article class="service-card">
+                  <img src="media/images/website-build.jpg" alt="Laptop showing website design work" />
+                  <div>
+                    <span class="service-icon build-icon" aria-hidden="true"></span>
+                    <span class="service-number">01</span>
+                    <h3>New Website Builds</h3>
+                    <p>A fresh site from the ground up, built around your offer, trust, and booked consultations.</p>
+                  </div>
+                </article>
+                <article class="service-card">
+                  <img src="media/images/website-redesign.jpg" alt="Website redesign planning session" />
+                  <div>
+                    <span class="service-icon redesign-icon" aria-hidden="true"></span>
+                    <span class="service-number">02</span>
+                    <h3>Website Redesigns</h3>
+                    <p>A sharper version of your current site with cleaner visuals, messaging, and visitor flow.</p>
+                  </div>
+                </article>
               </div>
-            </article>
-          </div>
+            </div>
+          </details>
 
-          <div class="comparison" data-testid="comparison-section">
-            <div class="comparison-graphic" aria-hidden="true">
-              <span></span><span></span><span></span>
+          <details class="dropbox section-dropbox" data-testid="comparison-dropbox">
+            <summary data-testid="comparison-dropbox-summary">
+              <span>New build vs. redesign</span>
+              <strong>Not sure which one you need?</strong>
+              <em>Open</em>
+            </summary>
+            <div class="comparison dropbox-content" data-testid="comparison-section">
+              <div class="comparison-graphic" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="comparison-heading">
+                <p class="eyebrow">New build vs. redesign</p>
+                <h3>Not sure which one you need?</h3>
+                <p>Start fresh when you need a full foundation. Redesign when your existing site has potential but needs polish.</p>
+              </div>
+              <div class="comparison-grid">
+                <article>
+                  <p class="eyebrow">Choose a new build if...</p>
+                  <h4>You need a complete online foundation.</h4>
+                  <ul>
+                    <li>No current site</li>
+                    <li>New brand or offer</li>
+                    <li>A polished launch from scratch</li>
+                  </ul>
+                </article>
+                <article>
+                  <p class="eyebrow">Choose a redesign if...</p>
+                  <h4>Your current site needs to work harder.</h4>
+                  <ul>
+                    <li>Outdated look</li>
+                    <li>Confusing user flow</li>
+                    <li>Visitors are not turning into leads</li>
+                  </ul>
+                </article>
+              </div>
             </div>
-            <div class="comparison-heading">
-              <p class="eyebrow">New build vs. redesign</p>
-              <h3>Not sure which one you need?</h3>
-              <p>Start fresh when you need a full foundation. Redesign when your existing site has potential but needs polish.</p>
-            </div>
-            <div class="comparison-grid">
-              <article>
-                <p class="eyebrow">Choose a new build if...</p>
-                <h4>You need a complete online foundation.</h4>
-                <ul>
-                  <li>No current site</li>
-                  <li>New brand or offer</li>
-                  <li>A polished launch from scratch</li>
-                </ul>
-              </article>
-              <article>
-                <p class="eyebrow">Choose a redesign if...</p>
-                <h4>Your current site needs to work harder.</h4>
-                <ul>
-                  <li>Outdated look</li>
-                  <li>Confusing user flow</li>
-                  <li>Visitors are not turning into leads</li>
-                </ul>
-              </article>
-            </div>
-          </div>
+          </details>
         </div>
       </section>
 
@@ -285,23 +306,23 @@
             <a href="https://forms.gle/ixQAAPpZwVBGPcbx6" class="button button-primary">Still have questions? Book a free consultation</a>
             <!-- PUT GOOGLE FORM OR EXTERNAL FORM LINK IN THE href ABOVE -->
           </div>
-          <div class="faq-list">
-            <article>
-              <h3>How long does a new website build take?</h3>
+          <div class="faq-list" data-testid="faq-dropbox-list">
+            <details class="dropbox faq-dropbox" data-testid="faq-timeline-dropbox">
+              <summary data-testid="faq-timeline-summary"><strong>How long does a new website build take?</strong><em>Open</em></summary>
               <p>Most small business website builds can be planned, designed, and launched in a few weeks depending on the size and content needed.</p>
-            </article>
-            <article>
-              <h3>Do you redesign existing websites?</h3>
+            </details>
+            <details class="dropbox faq-dropbox" data-testid="faq-redesign-dropbox">
+              <summary data-testid="faq-redesign-summary"><strong>Do you redesign existing websites?</strong><em>Open</em></summary>
               <p>Yes. AJ Webworks can modernize your current site with cleaner visuals, stronger messaging, and a smoother path to booking a consultation.</p>
-            </article>
-            <article>
-              <h3>What is the difference between a new build and a redesign?</h3>
+            </details>
+            <details class="dropbox faq-dropbox" data-testid="faq-difference-dropbox">
+              <summary data-testid="faq-difference-summary"><strong>What is the difference between a new build and a redesign?</strong><em>Open</em></summary>
               <p>A new build is best when you need a website from scratch. A redesign is best when your current site has potential but needs a better flow.</p>
-            </article>
-            <article>
-              <h3>Can the website help me get more consultation requests?</h3>
+            </details>
+            <details class="dropbox faq-dropbox" data-testid="faq-consultation-dropbox">
+              <summary data-testid="faq-consultation-summary"><strong>Can the website help me get more consultation requests?</strong><em>Open</em></summary>
               <p>That is the goal. We focus on website design and redesign services for small businesses that need more trust and clearer messaging.</p>
-            </article>
+            </details>
           </div>
         </div>
       </section>

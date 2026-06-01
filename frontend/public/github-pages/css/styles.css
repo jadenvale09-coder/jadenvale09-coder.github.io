@@ -497,6 +497,91 @@ figcaption span {
   padding: 34px 0;
 }
 
+.dropbox {
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.055);
+}
+
+.dropbox summary {
+  display: grid;
+  grid-template-columns: 0.55fr 1.4fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 28px;
+  list-style: none;
+  cursor: pointer;
+  transition: background-color 220ms ease;
+}
+
+.dropbox summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropbox summary:hover {
+  background: var(--slate-50);
+}
+
+.dropbox summary span {
+  color: var(--blue-900);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.dropbox summary strong {
+  color: var(--slate-950);
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.dropbox summary em {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  border-radius: 999px;
+  background: var(--blue-900);
+  color: var(--white);
+  padding: 10px 14px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.dropbox summary em::after {
+  content: "+";
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.dropbox[open] summary em {
+  background: var(--slate-950);
+}
+
+.dropbox[open] summary em::after {
+  content: "–";
+}
+
+.dropbox-content {
+  border-top: 1px solid var(--slate-200);
+  padding: 24px;
+}
+
+.section-dropbox + .section-dropbox {
+  margin-top: 26px;
+}
+
+.compact-heading {
+  margin-bottom: 26px;
+}
+
 .visual-showcase {
   position: relative;
   overflow: hidden;
@@ -696,7 +781,7 @@ figcaption span {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: 0.75fr repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   align-items: stretch;
 }
@@ -840,7 +925,7 @@ figcaption span {
 .comparison {
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 0;
   padding: 38px;
   border-radius: 34px;
   background: var(--slate-50);
@@ -980,10 +1065,30 @@ figcaption span {
   gap: 18px;
 }
 
-.faq-list article {
+.faq-list article,
+.faq-dropbox {
   border-radius: 26px;
   background: var(--slate-50);
   padding: 28px;
+}
+
+.faq-dropbox {
+  padding: 0;
+}
+
+.faq-dropbox summary {
+  grid-template-columns: 1fr auto;
+  padding: 24px 28px;
+}
+
+.faq-dropbox summary strong {
+  font-size: 24px;
+}
+
+.faq-dropbox p {
+  margin: 0;
+  border-top: 1px solid var(--slate-200);
+  padding: 0 28px 26px;
 }
 
 .faq-list h3 {
@@ -1054,6 +1159,10 @@ figcaption span {
 
   .reviews-grid {
     gap: 14px;
+  }
+
+  .dropbox summary {
+    grid-template-columns: 1fr;
   }
 
   .stat-one,
