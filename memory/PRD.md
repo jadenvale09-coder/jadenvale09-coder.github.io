@@ -149,3 +149,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Updated Amanda Brooks’ review quote to: “They made me a clean and simple website that is easy to follow.”
 - Updated both root static files and the Emergent preview static copy.
 - Verified the updated quote appears in the preview reviews dropdown.
+
+## Recent Update - Marcus Lee Review
+- Updated Marcus Lee’s review quote to: “Awesome looking website, super easy to submit a form.”
+- Updated both root static files and the Emergent preview static copy.
+- Verified the updated quote appears in the preview reviews dropdown.
