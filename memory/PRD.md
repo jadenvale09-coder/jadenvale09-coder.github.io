@@ -144,3 +144,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Removed “SEO optimized websites” wording and kept the headline focused on “High conversion websites.”
 - Updated root static files, Emergent static preview copy, and metadata.
 - Verified the Emergent preview headline now reads “High conversion websites.”
+
+## Recent Update - Amanda Brooks Review
+- Updated Amanda Brooks’ review quote to: “They made me a clean and simple website that is easy to follow.”
+- Updated both root static files and the Emergent preview static copy.
+- Verified the updated quote appears in the preview reviews dropdown.
