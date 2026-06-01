@@ -107,6 +107,65 @@ const reviews = [
   },
 ];
 
+const BrowserGraphic = () => (
+  <div className="react-browser-graphic" aria-hidden="true">
+    <div className="react-browser-top"><span /><span /><span /></div>
+    <div className="react-browser-body">
+      <span className="react-browser-line wide" />
+      <span className="react-browser-line short" />
+      <span className="react-browser-button" />
+    </div>
+  </div>
+);
+
+const VisualShowcase = () => (
+  <section className="visual-showcase-react px-5 py-24 sm:px-8 lg:px-10 lg:py-32" data-testid="visual-showcase-section">
+    <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.72fr_1.28fr]">
+      <div className="animate-rise" data-testid="visual-showcase-copy">
+        <p className="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-blue-900" data-testid="visual-showcase-eyebrow">
+          Visual strategy
+        </p>
+        <h2 className="font-heading text-3xl font-extrabold tracking-[-0.04em] text-slate-950 sm:text-4xl" data-testid="visual-showcase-title">
+          Designed to make the next step obvious.
+        </h2>
+        <p className="mt-5 max-w-xl text-base leading-8 text-slate-600 md:text-lg" data-testid="visual-showcase-description">
+          Every page should guide visitors from first impression to booked consultation with clean visuals, clear proof, and a simple action path.
+        </p>
+      </div>
+      <div className="website-preview-graphic-react" aria-label="Graphic showing a website conversion layout" data-testid="website-preview-graphic">
+        <div className="preview-window-react">
+          <div className="preview-toolbar-react">
+            <span /><span /><span />
+            <div>ajwebworks.com</div>
+          </div>
+          <div className="preview-layout-react">
+            <div className="preview-hero-block-react">
+              <span className="preview-pill-react" />
+              <span className="preview-title-line-react" />
+              <span className="preview-title-line-react small" />
+              <span className="preview-cta-line-react" />
+            </div>
+            <div className="preview-side-panel-react">
+              <span /><span /><span />
+            </div>
+          </div>
+        </div>
+        <div className="floating-stat-react stat-one-react" data-testid="graphic-stat-trust">
+          <strong>Trust</strong>
+          <span>Clear first impression</span>
+        </div>
+        <div className="floating-stat-react stat-two-react" data-testid="graphic-stat-action">
+          <strong>Action</strong>
+          <span>One obvious next step</span>
+        </div>
+        <div className="conversion-path-react" aria-hidden="true">
+          <span>Visit</span><i /><span>Trust</span><i /><span>Book</span>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const scrollToLeadForm = () => {
   const leadCard = document.getElementById("lead-form-card");
   if (!leadCard) return;
@@ -192,6 +251,7 @@ const LeadForm = () => {
     <Card id="lead-form-card" className="lead-card overflow-hidden border-slate-200 bg-white/95 shadow-2xl shadow-blue-950/10" data-testid="hero-lead-form-card">
       <CardContent className="p-6 sm:p-8">
         <div className="mb-6" data-testid="lead-form-intro">
+          <BrowserGraphic />
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.28em] text-blue-800" data-testid="lead-form-eyebrow">
             Free consultation
           </p>
@@ -321,6 +381,14 @@ const Home = () => {
       <section className="relative isolate px-5 pb-20 pt-32 sm:px-8 lg:px-10 lg:pb-28 lg:pt-36" data-testid="hero-section">
         <div className="absolute left-0 top-0 -z-10 h-[34rem] w-[34rem] rounded-full bg-blue-100/70 blur-3xl" aria-hidden="true" />
         <div className="absolute right-[-18rem] top-28 -z-10 h-[42rem] w-[42rem] rounded-full bg-slate-200/70 blur-3xl" aria-hidden="true" />
+        <div className="hero-graphic-system-react" aria-hidden="true">
+          <span className="graphic-orb-react orb-one-react" />
+          <span className="graphic-orb-react orb-two-react" />
+          <span className="graphic-line-react line-one-react" />
+          <span className="graphic-line-react line-two-react" />
+          <span className="graphic-dot-react dot-one-react" />
+          <span className="graphic-dot-react dot-two-react" />
+        </div>
 
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.04fr_0.96fr]">
           <div className="animate-rise" data-testid="hero-copy-column">
@@ -394,6 +462,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <VisualShowcase />
 
       <section className="border-y border-slate-200 bg-slate-50 px-5 py-8 sm:px-8 lg:px-10" data-testid="social-proof-section">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">

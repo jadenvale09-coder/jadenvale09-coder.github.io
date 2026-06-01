@@ -116,3 +116,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added more visual graphics to the GitHub Pages static site: hero decorative shapes, browser preview graphic, service icons, comparison accents, and a visual strategy showcase section.
 - Kept graphics CSS-based and GitHub Pages-friendly with no extra platform dependency.
 - Verified the static hero and new showcase graphics render correctly in browser.
+
+## Recent Update - React Preview Graphics
+- Added the same enhanced graphics to the React/Emergent preview, not just the GitHub Pages static files.
+- Added hero decorative shapes, mini browser graphic inside the lead card, and the visual strategy showcase section.
+- Verified the Emergent preview URL now shows the new graphics and showcase section.

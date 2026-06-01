@@ -43,3 +43,332 @@
     background: #bfdbfe;
     color: #0f172a;
 }
+
+.hero-graphic-system-react {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.graphic-orb-react,
+.graphic-line-react,
+.graphic-dot-react {
+    position: absolute;
+    display: block;
+}
+
+.graphic-orb-react {
+    border-radius: 999px;
+    border: 1px solid rgba(30, 58, 138, 0.14);
+    background: linear-gradient(135deg, rgba(219, 234, 254, 0.72), rgba(255, 255, 255, 0.16));
+    box-shadow: inset 0 0 40px rgba(30, 58, 138, 0.08);
+}
+
+.orb-one-react {
+    width: 160px;
+    height: 160px;
+    left: 5vw;
+    top: 170px;
+}
+
+.orb-two-react {
+    width: 90px;
+    height: 90px;
+    right: 8vw;
+    bottom: 80px;
+}
+
+.graphic-line-react {
+    width: 210px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.24), transparent);
+    transform: rotate(-28deg);
+}
+
+.line-one-react {
+    left: 46vw;
+    top: 170px;
+}
+
+.line-two-react {
+    right: 3vw;
+    top: 360px;
+}
+
+.graphic-dot-react {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: #1e3a8a;
+    box-shadow: 0 0 0 12px rgba(30, 58, 138, 0.08);
+}
+
+.dot-one-react {
+    left: 15vw;
+    bottom: 130px;
+}
+
+.dot-two-react {
+    right: 18vw;
+    top: 145px;
+}
+
+.react-browser-graphic {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: #f8fafc;
+}
+
+.react-browser-top {
+    display: flex;
+    gap: 6px;
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.react-browser-top span {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #cbd5e1;
+}
+
+.react-browser-body {
+    display: grid;
+    gap: 10px;
+    padding: 18px;
+}
+
+.react-browser-line,
+.react-browser-button {
+    border-radius: 999px;
+}
+
+.react-browser-line {
+    height: 9px;
+    background: #e2e8f0;
+}
+
+.react-browser-line.wide {
+    width: 88%;
+}
+
+.react-browser-line.short {
+    width: 56%;
+}
+
+.react-browser-button {
+    width: 92px;
+    height: 18px;
+    margin-top: 5px;
+    background: #1e3a8a;
+}
+
+.visual-showcase-react {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 25%, rgba(219, 234, 254, 0.72), transparent 28%),
+        linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.visual-showcase-react::after {
+    content: "";
+    position: absolute;
+    inset: 80px 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.14), transparent);
+}
+
+.website-preview-graphic-react {
+    position: relative;
+    min-height: 440px;
+}
+
+.preview-window-react {
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 30px 90px rgba(15, 23, 42, 0.11);
+    backdrop-filter: blur(18px);
+}
+
+.preview-toolbar-react {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    background: rgba(248, 250, 252, 0.86);
+}
+
+.preview-toolbar-react > span {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #cbd5e1;
+}
+
+.preview-toolbar-react div {
+    margin-left: 10px;
+    width: min(260px, 50%);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #64748b;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.preview-layout-react {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 22px;
+    padding: 34px;
+}
+
+.preview-hero-block-react,
+.preview-side-panel-react {
+    min-height: 250px;
+    border-radius: 26px;
+    border: 1px solid #e2e8f0;
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
+    padding: 26px;
+}
+
+.preview-pill-react,
+.preview-title-line-react,
+.preview-cta-line-react,
+.preview-side-panel-react span {
+    display: block;
+    border-radius: 999px;
+}
+
+.preview-pill-react {
+    width: 130px;
+    height: 18px;
+    margin-bottom: 26px;
+    background: #dbeafe;
+}
+
+.preview-title-line-react {
+    width: 86%;
+    height: 24px;
+    margin-bottom: 14px;
+    background: #0f172a;
+}
+
+.preview-title-line-react.small {
+    width: 62%;
+}
+
+.preview-cta-line-react {
+    width: 145px;
+    height: 42px;
+    margin-top: 34px;
+    background: #1e3a8a;
+}
+
+.preview-side-panel-react {
+    display: grid;
+    align-content: center;
+    gap: 16px;
+    background: #0f172a;
+}
+
+.preview-side-panel-react span {
+    height: 18px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.preview-side-panel-react span:nth-child(2) {
+    width: 75%;
+}
+
+.preview-side-panel-react span:nth-child(3) {
+    width: 52%;
+    background: #93c5fd;
+}
+
+.floating-stat-react {
+    position: absolute;
+    display: grid;
+    gap: 4px;
+    min-width: 180px;
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.11);
+    backdrop-filter: blur(14px);
+}
+
+.floating-stat-react strong {
+    color: #1e3a8a;
+    font-family: "Outfit", sans-serif;
+    font-size: 26px;
+}
+
+.floating-stat-react span {
+    color: #475569;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.stat-one-react {
+    left: -24px;
+    bottom: 70px;
+}
+
+.stat-two-react {
+    right: -12px;
+    top: 54px;
+}
+
+.conversion-path-react {
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-50%);
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    background: #ffffff;
+    padding: 12px 16px;
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+    color: #334155;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.conversion-path-react i {
+    width: 34px;
+    height: 1px;
+    background: #1e3a8a;
+}
+
+@media (max-width: 1080px) {
+    .preview-layout-react {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-one-react,
+    .stat-two-react,
+    .conversion-path-react {
+        position: static;
+        margin-top: 16px;
+        transform: none;
+    }
+
+    .website-preview-graphic-react {
+        min-height: auto;
+    }
+}
