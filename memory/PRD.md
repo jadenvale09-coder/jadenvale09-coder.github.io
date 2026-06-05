@@ -202,3 +202,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Changed the About page paragraph beginning “AJ Webworks creates new websites...” to black.
 - Updated both root static files and Emergent preview static copy.
 - Verified the paragraph renders black in preview.
+
+## Recent Update - Removed Rhetoric Labels
+- Removed the “Ethos,” “Pathos,” and “Logos” labels from the About page cards.
+- Kept the card headings: Credibility first, Confidence for visitors, and A logical path to the form.
+- Verified the labels no longer appear in the About page preview.
