@@ -212,3 +212,9 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Added a Home link to the top of the hamburger menu on all static pages.
 - Synced Home link changes to the Emergent preview static copy.
 - Verified the Home link returns from Services to the main page in preview.
+
+## Recent Update - Homepage Trimmed
+- Removed Services, New Build Fit, About, FAQ, and final CTA sections from the main homepage.
+- Homepage now ends after the Conversion Stats dropdown and footer.
+- Kept Services, About, and FAQ content on their separate pages.
+- Synced changes to the Emergent preview static copy and verified the homepage ends after Conversion Stats.
