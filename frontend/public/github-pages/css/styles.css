@@ -883,7 +883,7 @@ figcaption span {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -935,23 +935,6 @@ figcaption span {
   height: 4px;
   left: 19px;
   top: 38px;
-}
-
-.redesign-icon::before {
-  width: 28px;
-  height: 28px;
-  left: 14px;
-  top: 14px;
-  background: transparent;
-  border: 5px solid var(--blue-900);
-}
-
-.redesign-icon::after {
-  width: 18px;
-  height: 5px;
-  right: 9px;
-  bottom: 11px;
-  transform: rotate(45deg);
 }
 
 .service-number {

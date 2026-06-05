@@ -174,3 +174,9 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Removed the “Clearer trust signals” / `2.1x` card from the conversion stats dropdown.
 - Updated stats grid from four cards to three cards in both root static files and Emergent preview static copy.
 - Verified the preview stats dropdown shows only form submissions, consultation clicks, and page drop-off.
+
+## Recent Update - New Builds Only
+- Removed all website redesign service references from root static files, Emergent preview static copy, metadata, services, comparison, and FAQ content.
+- Services now focus only on New Website Builds.
+- Replaced the New Build vs. Redesign comparison dropdown with a New Build Fit dropdown.
+- Verified the preview contains no redesign wording and shows new-build-only content.
