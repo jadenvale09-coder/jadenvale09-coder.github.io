@@ -1236,9 +1236,55 @@ figcaption span {
   transition-delay: 120ms;
 }
 
+.subpage-hero {
+  padding-top: 145px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(219, 234, 254, 0.82), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.subpage-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.page-detail {
+  background: var(--white);
+}
+
+.page-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.detail-card {
+  position: relative;
+  border: 1px solid var(--slate-200);
+  border-radius: 28px;
+  background: var(--white);
+  padding: 34px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.055);
+}
+
+.detail-card ul {
+  color: var(--slate-700);
+  font-weight: 800;
+  line-height: 1.9;
+  padding-left: 22px;
+}
+
+.full-width-card {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 1080px) {
   .hero-grid,
   .hero-side,
+  .subpage-hero-grid,
+  .page-card-grid,
   .reviews-grid,
   .stats-grid,
   .about-grid,

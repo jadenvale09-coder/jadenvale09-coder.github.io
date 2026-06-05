@@ -186,3 +186,9 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - The hamburger menu contains Services, About, and FAQ links that still scroll to their sections.
 - Synced changes to root static files and Emergent preview static copy.
 - Verified the menu is hidden by default, opens on click, and Services scroll navigation works.
+
+## Recent Update - Multi-page Static Navigation
+- Added separate static pages: `services.html`, `about.html`, and `faq.html`.
+- Updated hamburger menu and hero Services button to navigate to separate pages in the same browser window instead of scrolling.
+- Synced all new pages into `frontend/public/github-pages/` with corrected asset paths for Emergent preview.
+- Verified Services, About, and FAQ pages open from the hamburger menu and contain no redesign wording.
