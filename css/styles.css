@@ -1280,6 +1280,10 @@ figcaption span {
   grid-column: 1 / -1;
 }
 
+.about-page-title-black {
+  color: var(--slate-950);
+}
+
 @media (max-width: 1080px) {
   .hero-grid,
   .hero-side,

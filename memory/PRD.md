@@ -192,3 +192,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Updated hamburger menu and hero Services button to navigate to separate pages in the same browser window instead of scrolling.
 - Synced all new pages into `frontend/public/github-pages/` with corrected asset paths for Emergent preview.
 - Verified Services, About, and FAQ pages open from the hamburger menu and contain no redesign wording.
+
+## Recent Update - About Headline Color
+- Changed the About page headline “Built around trust, clarity, and action.” to black using `.about-page-title-black`.
+- Updated both root static files and Emergent preview static copy.
+- Verified the About page headline renders in black in preview.
