@@ -207,3 +207,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Removed the “Ethos,” “Pathos,” and “Logos” labels from the About page cards.
 - Kept the card headings: Credibility first, Confidence for visitors, and A logical path to the form.
 - Verified the labels no longer appear in the About page preview.
+
+## Recent Update - Hamburger Home Link
+- Added a Home link to the top of the hamburger menu on all static pages.
+- Synced Home link changes to the Emergent preview static copy.
+- Verified the Home link returns from Services to the main page in preview.
