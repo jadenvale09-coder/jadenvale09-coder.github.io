@@ -1284,6 +1284,10 @@ figcaption span {
   color: var(--slate-950);
 }
 
+.about .about-page-copy-black {
+  color: #000000;
+}
+
 @media (max-width: 1080px) {
   .hero-grid,
   .hero-side,

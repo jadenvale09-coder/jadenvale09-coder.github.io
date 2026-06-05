@@ -197,3 +197,8 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Changed the About page headline “Built around trust, clarity, and action.” to black using `.about-page-title-black`.
 - Updated both root static files and Emergent preview static copy.
 - Verified the About page headline renders in black in preview.
+
+## Recent Update - About Paragraph Color
+- Changed the About page paragraph beginning “AJ Webworks creates new websites...” to black.
+- Updated both root static files and Emergent preview static copy.
+- Verified the paragraph renders black in preview.
