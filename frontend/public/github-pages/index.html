@@ -39,17 +39,23 @@
             <small>Websites that sell</small>
           </span>
         </a>
-        <nav class="nav" aria-label="Main navigation" data-testid="header-navigation">
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#faq">FAQ</a>
+        <div class="header-actions" data-testid="header-actions">
           <a href="https://forms.gle/ixQAAPpZwVBGPcbx6" class="button button-primary nav-cta" data-testid="header-consultation-link">
             Book a free consultation
           </a>
           <!-- PUT GOOGLE FORM OR EXTERNAL FORM LINK IN THE href ABOVE -->
-        </nav>
-        <a href="https://forms.gle/ixQAAPpZwVBGPcbx6" class="button button-primary mobile-cta" data-testid="mobile-consultation-link">Book call</a>
-        <!-- PUT GOOGLE FORM OR EXTERNAL FORM LINK IN THE href ABOVE -->
+          <div class="hamburger-wrap" data-testid="hamburger-menu-wrapper">
+            <button class="hamburger-button" type="button" aria-expanded="false" aria-controls="site-menu" data-testid="hamburger-menu-button">
+              <span class="hamburger-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="hamburger-label">Menu</span>
+            </button>
+            <nav id="site-menu" class="hamburger-menu" aria-label="Section navigation" data-testid="hamburger-menu">
+              <a href="#services" data-testid="hamburger-services-link">Services</a>
+              <a href="#about" data-testid="hamburger-about-link">About</a>
+              <a href="#faq" data-testid="hamburger-faq-link">FAQ</a>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 

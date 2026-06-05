@@ -180,3 +180,9 @@ Build a landing page for a website-selling business. Make it modern and simple, 
 - Services now focus only on New Website Builds.
 - Replaced the New Build vs. Redesign comparison dropdown with a New Build Fit dropdown.
 - Verified the preview contains no redesign wording and shows new-build-only content.
+
+## Recent Update - Hamburger Menu
+- Replaced the top Services/About/FAQ text tabs with a hamburger menu in the top-right header area.
+- The hamburger menu contains Services, About, and FAQ links that still scroll to their sections.
+- Synced changes to root static files and Emergent preview static copy.
+- Verified the menu is hidden by default, opens on click, and Services scroll navigation works.
